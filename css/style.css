@@ -1,0 +1,77 @@
+@import url(reset.css);
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  color: #fff;
+}
+
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0.625rem;
+  max-width: 100%;
+  width: 31.25rem;
+  height: 31.25rem;
+  background-color: black;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+
+
+.card__item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+.card__link img {
+  border-radius: 0.625rem;
+}
+.card__title {
+  font-size: 1.25rem;
+  padding: 0.625rem 0 0.625rem;
+}
+
+.card__descr {
+  text-align: left;
+  margin-bottom: 0.625rem;
+}
+
+.card__price {
+   padding: 0.625rem;
+}
+
+.card__btn {
+width: 30%;
+padding: 0.75rem;
+border-radius: 0.3125rem;
+color: #121212;
+font-size: 1rem;
+transition: background-color .3s ease-in-out;
+}
+
+.card__btn:hover {
+  background-color: pink;
+}
+
+.card img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s;
+}
+
+.card button:hover {
+  background-color: #555;
+  color: #fff;
+  transition: background-color 0.3s;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+}
